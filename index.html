@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2540">
+  <meta name="description" content="الموقع الشخصي للمهندس أحمد حسين عبد الله سيد، مهندس كهرباء وتشطيب من موط، الوادي الجديد، مصر.">
+  <title>المهندس أحمد حسين عبد الله سيد | مهندس كهرباء وتشطيب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home"><span class="brand-mark">AH</span><span class="brand-name" data-i18n="brand">أحمد حسين</span></a>
+  <nav class="main-nav" id="mainNav">
+    <a href="#home" data-i18n="navHome">الرئيسية</a><a href="#about" data-i18n="navAbout">نبذة عني</a><a href="#services" data-i18n="navServices">الخدمات</a>
+    <a href="#projects" data-i18n="navProjects">الأعمال</a><a href="#products" data-i18n="navProducts">المنتجات</a><a href="#contact" data-i18n="navContact">التواصل</a>
+  </nav>
+  <div class="header-actions"><button class="small-btn" id="langBtn">EN</button><button class="small-btn" id="themeBtn" aria-label="تبديل الوضع">☾</button><button class="small-btn menu-btn" id="menuBtn">☰</button></div>
+</header>
+
+<main>
+<section class="hero section-wrap" id="home">
+  <div class="hero-copy"><p class="eyebrow" data-i18n="role">مهندس كهرباء وتشطيب</p><h1 data-i18n="heroTitle">المهندس أحمد حسين<br>عبد الله سيد</h1>
+    <p class="muted">⌖ <span data-i18n="location">موط، محافظة الوادي الجديد، مصر</span></p>
+    <p class="hero-desc" data-i18n="heroDesc">أعمل في تأسيس وتمديدات الكهرباء، وأعمال التشطيب الكهربائي، وتنفيذ أعمال الكهرباء الحديثة.</p>
+    <a class="primary-btn" href="#contact" data-i18n="contactMe">تواصل معي ↙</a>
+  </div>
+  <div class="hero-visual"><div class="ring r1"></div><div class="ring r2"></div><div class="bolt-card">ϟ</div><span>ELECTRICAL · FINISHING</span></div>
+</section>
+
+<section class="section-wrap about" id="about"><div class="section-title"><p class="eyebrow" data-i18n="aboutEyebrow">تعرف عليّ</p><h2 data-i18n="aboutTitle">نبذة عني</h2></div>
+  <div class="about-grid"><div class="portrait"><img src="assets/profile.jpg" alt="الصورة الشخصية للمهندس أحمد حسين" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="placeholder" hidden>AH<br><small data-i18n="addPortrait">أضف صورتك باسم profile.jpg داخل assets</small></div></div>
+    <div><h3 data-i18n="fullName">المهندس أحمد حسين عبد الله سيد</h3><p class="muted" data-i18n="aboutText">مهندس كهرباء من موط بمحافظة الوادي الجديد، مصر. تتركز مجالات عملي في تأسيس الكهرباء، وأعمال التشطيب، وأعمال الكهرباء الحديثة.</p>
+    <div class="tags"><span data-i18n="tag1">تأسيس الكهرباء</span><span data-i18n="tag2">أعمال التشطيب</span><span data-i18n="tag3">أعمال الكهرباء الحديثة</span></div></div>
+  </div>
+</section>
+
+<section class="services-band" id="services"><div class="section-wrap"><div class="section-title"><p class="eyebrow" data-i18n="servicesEyebrow">ما أقدمه</p><h2 data-i18n="servicesTitle">الخدمات</h2></div>
+  <div class="service-grid"><article class="service-card"><b>01</b><span>⌁</span><h3 data-i18n="service1">تأسيس وتمديدات الكهرباء</h3></article><article class="service-card"><b>02</b><span>▦</span><h3 data-i18n="service2">أعمال التشطيب الكهربائي</h3></article><article class="service-card"><b>03</b><span>ϟ</span><h3 data-i18n="service3">تنفيذ أعمال الكهرباء الحديثة</h3></article></div>
+</div></section>
+
+<section class="section-wrap content-section" id="projects"><div class="section-title"><p class="eyebrow" data-i18n="projectsEyebrow">نماذج من الأعمال</p><h2 data-i18n="projectsTitle">الأعمال والمشاريع</h2><p class="muted" data-i18n="projectsIntro">تُعرض الأعمال التي يضيفها صاحب الموقع من لوحة التحكم.</p></div><div class="cards-grid" id="projectsGrid"><p class="empty" data-i18n="loading">جارٍ تحميل البيانات...</p></div></section>
+
+<section class="products-band" id="products"><div class="section-wrap content-section"><div class="section-title"><p class="eyebrow" data-i18n="productsEyebrow">تصفح واطلب</p><h2 data-i18n="productsTitle">المنتجات</h2><p class="muted" data-i18n="productsIntro">يمكنك إرسال طلب منتج من خلال النموذج.</p></div><div class="cards-grid" id="productsGrid"><p class="empty" data-i18n="loading">جارٍ تحميل البيانات...</p></div></div></section>
+
+<section class="section-wrap contact-section" id="contact"><div class="contact-panel"><div><p class="eyebrow" data-i18n="contactEyebrow">هل ترغب في التواصل؟</p><h2 data-i18n="contactTitle">يسعدني تواصلك</h2><p data-i18n="contactText">للاستفسار أو طلب المنتجات، يمكنك التواصل مباشرة.</p></div><div><a class="phone" href="tel:01206988818" dir="ltr">01206988818</a><a class="white-btn" href="https://wa.me/201206988818" target="_blank" rel="noopener" data-i18n="whatsapp">تواصل عبر واتساب</a><a class="white-btn facebook-btn" href="https://www.facebook.com/share/1E1c8YZcKV/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f&nbsp; Facebook</a></div></div></section>
+</main>
+
+<footer class="footer"><div class="footer-inner"><b data-i18n="fullName">المهندس أحمد حسين عبد الله سيد</b><div class="footer-links"><a href="#home" data-i18n="navHome">الرئيسية</a><a href="#projects" data-i18n="navProjects">الأعمال</a><a href="#products" data-i18n="navProducts">المنتجات</a><a href="#contact" data-i18n="navContact">التواصل</a></div><a href="tel:01206988818" dir="ltr">01206988818</a><a class="facebook-link" href="https://www.facebook.com/share/1E1c8YZcKV/" target="_blank" rel="noopener noreferrer">Facebook</a></div><div class="copyright" data-i18n="copyright">© أحمد حسين عبد الله سيد. جميع الحقوق محفوظة.</div></footer>
+
+<!-- نموذج طلب المنتج -->
+<div class="modal" id="orderModal" aria-hidden="true"><div class="modal-box"><button class="modal-close" id="closeOrder">×</button><p class="eyebrow" data-i18n="orderEyebrow">طلب منتج</p><h2 id="orderProductTitle">—</h2>
+<form id="orderForm"><input type="hidden" id="orderProductId"><label><span data-i18n="customerName">الاسم</span><input id="customerName" required maxlength="100"></label>
+<label><span data-i18n="customerPhone">رقم الهاتف</span><input id="customerPhone" required type="tel" maxlength="30"></label>
+<label><span data-i18n="quantity">الكمية</span><input id="quantity" required type="number" min="1" max="999" value="1"></label>
+<label><span data-i18n="orderNotes">ملاحظات (اختياري)</span><textarea id="orderNotes" rows="3" maxlength="1000"></textarea></label>
+<button class="primary-btn full" type="submit" data-i18n="sendOrder">إرسال الطلب</button><p class="form-message" id="orderMessage" role="status"></p></form></div></div>
+
+<!-- لوحة الإدارة: لا تظهر إلا بعد تسجيل دخول مسؤول معتمد في Supabase -->
+<section class="admin-area" id="adminArea" hidden><div class="admin-header"><div><p class="eyebrow">ADMIN PANEL</p><h2 data-i18n="adminTitle">لوحة إدارة الموقع</h2></div><button class="outline-btn" id="logoutBtn" data-i18n="logout">تسجيل الخروج</button></div>
+<div class="admin-stats" id="adminStats"></div>
+<div class="admin-tabs"><button class="tab active" data-tab="work" data-i18n="tabWork">إدارة الأعمال</button><button class="tab" data-tab="product" data-i18n="tabProducts">إدارة المنتجات</button><button class="tab" data-tab="orders" data-i18n="tabOrders">طلبات العملاء</button></div>
+<div class="admin-content">
+  <div class="admin-pane" id="pane-work"><h3 data-i18n="addWork">إضافة / تعديل عمل</h3><form id="workForm" class="admin-form"><input type="hidden" id="workId"><label><span data-i18n="workTitle">اسم العمل</span><input id="workTitle" required maxlength="150"></label><label><span data-i18n="workDesc">الوصف</span><textarea id="workDesc" rows="3" maxlength="1000"></textarea></label><label><span data-i18n="workImage">صورة العمل</span><input id="workImage" type="file" accept="image/*"></label><button class="primary-btn" type="submit" data-i18n="saveWork">حفظ العمل</button><button class="outline-btn" type="button" id="cancelWork" data-i18n="cancel">إلغاء</button></form><div id="adminWorks" class="admin-list"></div></div>
+  <div class="admin-pane" id="pane-product" hidden><h3 data-i18n="addProduct">إضافة / تعديل منتج</h3><form id="productForm" class="admin-form"><input type="hidden" id="productId"><label><span data-i18n="productName">اسم المنتج</span><input id="productName" required maxlength="150"></label><label><span data-i18n="productDesc">الوصف</span><textarea id="productDesc" rows="3" maxlength="1000"></textarea></label><label><span data-i18n="price">السعر (رقم)</span><input id="productPrice" type="number" min="0" step="0.01" required></label><label><span data-i18n="availability">التوفر</span><select id="productAvailable"><option value="true" data-i18n="available">متوفر</option><option value="false" data-i18n="unavailable">غير متوفر</option></select></label><label><span data-i18n="productImage">صورة المنتج</span><input id="productImage" type="file" accept="image/*"></label><button class="primary-btn" type="submit" data-i18n="saveProduct">حفظ المنتج</button><button class="outline-btn" type="button" id="cancelProduct" data-i18n="cancel">إلغاء</button></form><div id="adminProducts" class="admin-list"></div></div>
+  <div class="admin-pane" id="pane-orders" hidden><h3 data-i18n="ordersTitle">طلبات العملاء</h3><div id="adminOrders" class="orders-list"></div></div>
+</div></section>
+
+<section class="admin-login" id="adminLogin"><button class="admin-login-toggle" id="showLogin" data-i18n="adminLoginLink">دخول الإدارة</button><form id="loginForm" hidden><h3 data-i18n="loginTitle">تسجيل دخول الإدارة</h3><label>Email<input type="email" id="adminEmail" required autocomplete="username"></label><label data-i18n="password">كلمة المرور<input type="password" id="adminPassword" required autocomplete="current-password"></label><button class="primary-btn" type="submit" data-i18n="login">دخول</button><p class="form-message" id="loginMessage"></p></form></section>
+
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
